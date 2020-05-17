@@ -223,7 +223,7 @@ class VerticalLinearStepper extends React.Component {
     const dd = "</>"
     return (
       <div className={classes.defaultStyle}>
-      <Typography variant="h4" color="inherit"><span>{dd.substr(0,1)}</span> Contact me <span>{dd.substr(1,2)}</span></Typography>
+      <Typography variant="h4" color="inherit"><span>{dd.substr(0,1)}</span> Contact us <span>{dd.substr(1,2)}</span></Typography>
       <Snackbar show={this.state.open} message="enis"/>
       <form onSubmit ={this.handleSubmit}>
         <Stepper activeStep={activeStep} orientation="vertical">

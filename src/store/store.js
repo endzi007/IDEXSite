@@ -20,6 +20,6 @@ const reducers = combineReducers({
     appInfoAndLinks: appInfoAndLinksReducer
 
 });
-const store = createStore(reducers, defaultState, applyMiddleware(thunk));
+const store = createStore(reducers, defaultState, applyMiddleware(thunk, logger));
 
 export default store;

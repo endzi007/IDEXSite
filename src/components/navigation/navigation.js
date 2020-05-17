@@ -175,11 +175,9 @@ const Navigation = (props)=> {
                     
                 </div>
                 <div>
-                    <NavItem url="/" name="Home" className={classes.navItemStyle}/>
-                    <NavItem url="/Skills" name="Skills" className={classes.navItemStyle}/>
-                    <NavItem url="/Projects" name="Projects" className={classes.navItemStyle}/>
+                    <NavItem url="/" name="Profile" className={classes.navItemStyle}/>
                     <NavItem url="/Contact" name="Contact" className={classes.navItemStyle}/>
-                    <NavItem url="/Donate" name="Donate" className={classes.navItemStyle}/>
+
                 </div>
                 <div className={classes.info}>
                 <Typography variant="body2">{appInfos.contact.email}</Typography>

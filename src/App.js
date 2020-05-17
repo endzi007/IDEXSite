@@ -4,18 +4,16 @@ import { useSelector} from 'react-redux';
 import './App.scss';
 import { ThemeProvider, makeStyles, useMediaQuery, responsiveFontSizes, useTheme } from '@material-ui/core';
 import themeCreator from './components/helperComponents/theme';
-import Drawer from './components/navigation/drawer';
 import Navigation from './components/navigation/navigation';
+import Drawer from "./components/newDrawer/drawer";
 import TransitionOverlay from './transitionOverlay.js';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { TimelineMax, Power3 } from 'gsap';
 
 /*-----pages------*/
-import Skills from './components/skills/skills';
 import Contact from './components/contact/contact';
-import Projects from './components//project/projects'; 
-import HomeText from './components//home/homeText';
-import Donations from './components/donate/donate';
+import Profile from './components/home/profile';
+
 
 let storedTheme = "";
 try {
@@ -62,16 +60,13 @@ const App = (props)=> {
       <ThemeProvider theme={theme}>
       <CssBaseline />
       <Router>
+          <Drawer />
          <Wrapper>
           <TransitionOverlay />
           <Switch>
-            <Route exact path="/" component={HomeText} />             
-            <Route path="/skills" component={Skills}/>
-            <Route exact path="/projects" component={Projects}/>
-            <Route path="/contact" component={Contact}/>
-            <Route path="/donate" component={Donations} />
+            <Route exact path="/" component={Profile} />             
+            <Route exact path="/Contact" component={Contact}/>
           </Switch>
-          <Navigation />
           </Wrapper>
         </Router>
         </ThemeProvider>
