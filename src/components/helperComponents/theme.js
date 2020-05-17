@@ -110,7 +110,7 @@ const theme = (props)=>{
         mobile: {
           margins: {
             top: "70px",
-            left: "5px",
+            left: "80px",
             right: "5px",
             bottom: "5px"
           }
