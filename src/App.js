@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState} from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { useSelector} from 'react-redux';
-import './App.scss';
+import './App.css';
 import { ThemeProvider, makeStyles, useMediaQuery, responsiveFontSizes, useTheme } from '@material-ui/core';
 import themeCreator from './components/helperComponents/theme';
 import Navigation from './components/navigation/navigation';
